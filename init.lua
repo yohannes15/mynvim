@@ -638,7 +638,10 @@ require('lazy').setup({
             })
           end,
           settings = {
-            Lua = {},
+            Lua = {
+              -- Neovim injects `vim`; lua_ls does not know it without this (undefined-global).
+              diagnostics = { globals = { 'vim' } },
+            },
           },
         },
       }
