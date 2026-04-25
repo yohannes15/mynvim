@@ -8,6 +8,7 @@ return {
   unpack(require 'plugins.telescope'),
   unpack(require 'plugins.lsp'),
   unpack(require 'plugins.conform'),
+  unpack(require 'plugins.auto_save'),
   unpack(require 'plugins.blink'),
   unpack(require 'plugins.nvim_metals'),
   unpack(require 'plugins.colorscheme'),

@@ -2,12 +2,23 @@ return {
   {
     'scalameta/nvim-metals',
     ft = { 'scala', 'sbt', 'java' },
+    keys = {
+      {
+        '<leader>mi',
+        function() require('metals').import_build() end,
+        desc = 'Metals: Import Build',
+      },
+    },
     dependencies = {
       { 'nvim-lua/plenary.nvim' },
       'saghen/blink.cmp',
     },
     opts = function()
       local metals_config = require('metals').bare_config()
+
+      -- Import the build automatically on first open so Metals does not keep
+      -- prompting about the workspace before it has finished indexing.
+      metals_config.settings.autoImportBuild = 'initial'
 
       -- Use the same completion capabilities as the rest of the LSP stack.
       local metals_capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -26,6 +37,7 @@ return {
     end,
     config = function(self, metals_config)
       local nvim_metals_group = vim.api.nvim_create_augroup('nvim-metals', { clear = true })
+
       vim.api.nvim_create_autocmd('FileType', {
         pattern = self.ft,
         callback = function()
