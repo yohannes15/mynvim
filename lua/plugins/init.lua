@@ -8,6 +8,7 @@ return {
   unpack(require 'plugins.telescope'),
   unpack(require 'plugins.lsp'),
   unpack(require 'plugins.conform'),
+  unpack(require 'plugins.trouble'),
   unpack(require 'plugins.auto_save'),
   unpack(require 'plugins.blink'),
   unpack(require 'plugins.dap'),
