@@ -58,8 +58,8 @@ return {
       },
     },
     config = function()
-      local dap = require 'dap'
-      local dapui = require 'dapui'
+      local dap = require('dap')
+      local dapui = require('dapui')
 
       dap.listeners.after.event_initialized['dapui_config'] = function()
         dapui.open()
@@ -73,6 +73,8 @@ return {
         dapui.close()
       end
 
+      require('plugins.dap_scala').register(dap)
+      -- e.g. later: require('plugins.dap_python').register(dap)
     end,
   },
 }
