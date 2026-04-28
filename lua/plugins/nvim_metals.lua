@@ -2,13 +2,7 @@ return {
   {
     'scalameta/nvim-metals',
     ft = { 'scala', 'sbt', 'java' },
-    keys = {
-      {
-        '<leader>mi',
-        function() require('metals').import_build() end,
-        desc = 'Metals: Import Build',
-      },
-    },
+    keys = {},
     dependencies = {
       { 'nvim-lua/plenary.nvim' },
       'mfussenegger/nvim-dap',
