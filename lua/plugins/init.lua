@@ -20,6 +20,7 @@ return {
   unpack(require 'plugins.treesitter'),
   unpack(require 'plugins.render_markdown'),
   unpack(require 'plugins.mini'),
+  unpack(require 'plugins.harpoon'),
   unpack(require 'plugins.snacks'),
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`

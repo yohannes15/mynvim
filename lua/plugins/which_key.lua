@@ -29,9 +29,10 @@ return {
         { '<leader>d', group = '[D]ebug' },
         { '<leader>t', group = '[T]rouble' },
         { '<leader>g', group = '[G]it' },
+        { '<leader>gh', group = 'Git [H]unk', mode = { 'n', 'v' } },
         { '<leader>u', group = '[U]nit/UI' },
         { '<leader>b', group = '[B]uffer' },
-        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } }, -- Enable gitsigns recommended keymaps first
+        { '<leader>h', group = '[H]arpoon' },
         { 'gl', group = 'LSP (language server)', mode = { 'n' } },
       },
     },
