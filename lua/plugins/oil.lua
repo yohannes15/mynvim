@@ -16,8 +16,6 @@ return {
       },
       -- Keymaps in oil buffer
       keymaps = {
-        ['<C-v>'] = { 'actions.select', opts = { vertical = true }, desc = 'Open the selection in a vertical split' },
-        ['<C-x>'] = { 'actions.select', opts = { horizontal = true }, desc = 'Open the selection in a horizontal split' },
         ['gs'] = false,
         ['gS'] = 'actions.change_sort',
       },
