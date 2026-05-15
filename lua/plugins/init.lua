@@ -6,6 +6,7 @@ return {
   unpack(require 'plugins.gitsigns'),
   unpack(require 'plugins.which_key'),
   unpack(require 'plugins.oil'),
+  unpack(require 'plugins.flash'),
   unpack(require 'plugins.lsp'),
   unpack(require 'plugins.conform'),
   unpack(require 'plugins.trouble'),

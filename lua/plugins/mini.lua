@@ -1,22 +1,14 @@
 return {
   { -- Collection of various small independent plugins/modules
-    'nvim-mini/mini.nvim',
+    'echasnovski/mini.nvim',
     config = function()
       -- Better text-objects
-      --
       --  - va)  - [V]isually select [A]round [)]parenthenses
       --  - yinq - [Y]ank [I]nside [N]ext [Q]uote
       --  - ci'  - [C]hange [I]nside [']quote
-      -- require('mini.ai').setup {
-      --   mappings = {
-      --     around_next = 'aa',
-      --     inside_next = 'ii',
-      --   },
-      --   n_lines = 500,
-      -- }
+      -- require('mini.ai').setup { n_lines = 500 }
 
       -- Add/delete/replace surroundings (brackets, quotes, etc.)
-      --
       -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]parentheses
       -- - sd'   - [S]urround [D]elete [']quotes
       -- - sr)'  - [S]urround [R]eplace [)] [']
