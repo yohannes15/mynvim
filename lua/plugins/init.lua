@@ -22,6 +22,7 @@ return {
   unpack(require 'plugins.mini'),
   unpack(require 'plugins.harpoon'),
   unpack(require 'plugins.snacks'),
+  unpack(require 'plugins.vim_be_good'),
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
